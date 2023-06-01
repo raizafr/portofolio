@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-porto text-white
+}
+
+.button{   
+    @apply bg-[#244ba0] px-2 py-1 rounded-full hover:bg-[#2063f5] hover:text-black font-semibold 
+}
