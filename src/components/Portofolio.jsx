@@ -1,4 +1,6 @@
 import portofolio from "../assets/portofolio.webp";
+import todolist from "../assets/todolist.webp";
+import cloningTwitter from "../assets/twitterClone.webp";
 
 const Card = (props) => {
   return (
@@ -7,9 +9,12 @@ const Card = (props) => {
         <img src={props.image} alt="" className="w-[250px] mt-0.5" />
       </div>
       <div className="mt-1 px-1">
-        <div className=" font-bold ">{props.title}</div>
+        <div className=" font-bold ">
+          {props.title}
+          <span className="text-xs font-thin">{props.info}</span>
+        </div>
         <div className="space-x-1 text-xs mt-2">
-          <a href={props.liveDemoLink} className="button" target="blank">
+          <a href={props.liveDemoLink} className="button">
             Live demo
           </a>
           <a href={props.sourceCodeLink} className="button" target="blank">
@@ -40,6 +45,19 @@ const Portofolio = () => {
             title="Website Portofolio"
             liveDemoLink="http://raizafarhan.netlify.app/"
             sourceCodeLink="https://github.com/raizafr/portofolio-master"
+          />
+          <Card
+            image={todolist}
+            title="Todo List"
+            liveDemoLink="#"
+            sourceCodeLink="https://github.com/raizafr/todolist"
+          />
+          <Card
+            image={cloningTwitter}
+            title="Twitter Clone"
+            info=" dalam pengerjaan"
+            liveDemoLink="#"
+            sourceCodeLink="https://github.com/raizafr/twitter-clone"
           />
         </div>
       </div>

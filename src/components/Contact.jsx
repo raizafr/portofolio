@@ -13,7 +13,7 @@ const Contact = () => {
         className="container mx-auto md:px-6 lg:px-36 space-y-3 my-4 mb-5"
         data-aos="fade-right"
       >
-        <div>
+        <div className="w-fit hover:text-[#317bdb]">
           <a
             href="https://wa.me/+6282268347830"
             target="_blank"
@@ -24,7 +24,7 @@ const Contact = () => {
             <div className="">+62-822-6834-2730</div>
           </a>
         </div>
-        <div>
+        <div className="w-fit hover:text-[#317bdb]">
           <a
             href="mailto:raizafr056@gmail.com"
             className="flex items-center space-x-4 font-semibold"
