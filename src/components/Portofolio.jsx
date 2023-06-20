@@ -1,6 +1,7 @@
 import portofolio from "../assets/portofolio.webp";
 import todolist from "../assets/todolist.webp";
 import cloningTwitter from "../assets/twitterClone.webp";
+import slicing from "../assets/slicing.webp";
 
 const Card = (props) => {
   return (
@@ -15,10 +16,10 @@ const Card = (props) => {
         </div>
         <div className="space-x-1 text-xs mt-2">
           <a href={props.liveDemoLink} className="button">
-            Live demo
+            {props.linkTitleDemo}
           </a>
           <a href={props.sourceCodeLink} className="button" target="blank">
-            source code
+            {props.linkTitleCode}
           </a>
         </div>
       </div>
@@ -41,16 +42,28 @@ const Portofolio = () => {
           data-aos="fade-up"
         >
           <Card
+            image={slicing}
+            title="Slicing "
+            liveDemoLink="#"
+            sourceCodeLink="https://github.com/raizafr/slicing-design-2"
+            linkTitleDemo="Live Belum Tersedia"
+            linkTitleCode="Surce Code"
+          />
+          <Card
             image={portofolio}
             title="Website Portofolio"
             liveDemoLink="http://raizafarhan.netlify.app/"
             sourceCodeLink="https://github.com/raizafr/portofolio-master"
+            linkTitleDemo="Live Demo"
+            linkTitleCode="Surce Code"
           />
           <Card
             image={todolist}
             title="Todo List"
             liveDemoLink="#"
             sourceCodeLink="https://github.com/raizafr/todolist"
+            linkTitleDemo="Live Belum Tersedia"
+            linkTitleCode="Surce Code"
           />
           <Card
             image={cloningTwitter}
@@ -58,6 +71,8 @@ const Portofolio = () => {
             info=" dalam pengerjaan"
             liveDemoLink="#"
             sourceCodeLink="https://github.com/raizafr/twitter-clone"
+            linkTitleDemo="Live Belum Tersedia"
+            linkTitleCode="Surce Code"
           />
         </div>
       </div>

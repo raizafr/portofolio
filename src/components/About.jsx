@@ -53,18 +53,14 @@ const About = () => {
           </div>
           <div className="space-y-4">
             <p>
-              Saat ini saya sedang menempuh pendidikan di salah satu Universitas
-              Negeri di Kota Padang
-            </p>
-            <p>
-              Keseharian saya adalah kuliah dan belajar programming secara
-              otodidak,saya menyukai hal yang berhubungan dengan teknologi dan
+              Saya menyukai hal yang berhubungan dengan teknologi dan
               perogramming, walaupun tidak mempunyai latar belakang pendidikan
-              di dunia peogramming
+              di dunia teknologi dan programming.
             </p>
             <p>
-              Untuk saat ini saya sedang fokus belajar mengenai web-developer,
-              yang mana ketertarikan ini bermula karena iseng .
+              Saat ini saya sedang mencari pekerjaan sebagai web developer, web
+              portofolio ini saya sebagai tempat untuk memperlihatkan progress
+              saya dalam dunia web development.
             </p>
           </div>
         </div>

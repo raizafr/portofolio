@@ -26,11 +26,11 @@ const Contact = () => {
         </div>
         <div className="w-fit hover:text-[#317bdb]">
           <a
-            href="mailto:raizafr056@gmail.com"
+            href="mailto:mhdraizafarhan@gmail.com"
             className="flex items-center space-x-4 font-semibold"
           >
             <EmailIcon />
-            <div className="">frraiza056@gmail.com</div>
+            <div className="">mhdraizafarhan@gmail.com</div>
           </a>
         </div>
       </div>

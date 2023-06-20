@@ -33,8 +33,13 @@ const Skills = () => {
           </div>
           <div className="flex space-x-4">
             <div>
-              <div className="bg-javascript text-center w-28 rounded-full py-0">
+              <div className="bg-[#e8dd13] text-center w-28 rounded-full py-0">
                 JAVASCRIPT
+              </div>
+            </div>
+            <div>
+              <div className="bg-[#10b34f] text-center w-28 rounded-full py-0">
+                NODE JS
               </div>
             </div>
             <div>
@@ -46,10 +51,23 @@ const Skills = () => {
         </div>
         <div data-aos="fade-right">
           <div className="font-semibold my-4">
-            <div className="mb-2">Framework</div>
+            <div className="mb-2">DBMS</div>
             <hr />
           </div>
           <div className="flex space-x-4">
+            <div>
+              <div className="bg-[#e88f13] text-center w-28 rounded-full py-0">
+                MY SQL
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right">
+          <div className="font-semibold my-4">
+            <div className="mb-2">Framework</div>
+            <hr />
+          </div>
+          <div className="flex space-x-4 flex-wrap">
             <div>
               <div className="bg-bootstrap text-center w-24 rounded-full py-0">
                 BOOTSTRAP
