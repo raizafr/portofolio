@@ -2,6 +2,7 @@ import portofolio from "../assets/portofolio.webp";
 import todolist from "../assets/todolist.webp";
 import cloningTwitter from "../assets/twitterClone.webp";
 import slicing from "../assets/slicing.webp";
+import thirdSlicing from "../assets/slicing3.webp";
 
 const Card = (props) => {
   return (
@@ -15,7 +16,7 @@ const Card = (props) => {
           <span className="text-xs font-thin">{props.info}</span>
         </div>
         <div className="space-x-1 text-xs mt-2">
-          <a href={props.liveDemoLink} className="button">
+          <a href={props.liveDemoLink} className="button" target="_blank">
             {props.linkTitleDemo}
           </a>
           <a href={props.sourceCodeLink} className="button" target="blank">
@@ -44,9 +45,17 @@ const Portofolio = () => {
           <Card
             image={slicing}
             title="Slicing "
-            liveDemoLink="#"
+            liveDemoLink="https://friendly-strudel-923ff0.netlify.app/"
             sourceCodeLink="https://github.com/raizafr/slicing-design-2"
-            linkTitleDemo="Live Belum Tersedia"
+            linkTitleDemo="Live Demo"
+            linkTitleCode="Surce Code"
+          />
+          <Card
+            image={thirdSlicing}
+            title="Slicing "
+            liveDemoLink="https://cosmic-sopapillas-bc7b4f.netlify.app/"
+            sourceCodeLink="https://github.com/raizafr/slicing-3"
+            linkTitleDemo="Live Demo"
             linkTitleCode="Surce Code"
           />
           <Card
