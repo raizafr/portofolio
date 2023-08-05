@@ -11,13 +11,13 @@ const Skills = () => {
       </div>
       <div className="container mx-auto px-3 md:px-6 lg:px-36 grid md:grid-cols-2 gap-10">
         <div
-          className="bg-[#2C2C6C] p-10 rounded-lg border border-[#2C2C6C] hover:bg-transparent duration-500"
+          className="bg-[#2C2C6C] md:p-10 p-3 rounded-lg border border-[#2C2C6C] hover:bg-transparent duration-500"
           data-aos="fade-right"
         >
           <h2 className="text-center text-xl font-semibold text-[#4BB0F8] ">
             Front End
           </h2>
-          <ul className="grid grid-cols-2 gap-7 mt-10">
+          <ul className={`grid grid-cols-2 gap-7 mt-10`}>
             <li className="flex font-semibold items-center gap-4">
               <HiOutlineBadgeCheck className="scale-[1.4]" />
               HTML
@@ -32,7 +32,7 @@ const Skills = () => {
             </li>
             <li className="flex font-semibold items-center gap-4">
               <HiOutlineBadgeCheck className="scale-[1.4]" />
-              Bootsatrap
+              <p>Bootsatrap</p>
             </li>
             <li className="flex font-semibold items-center gap-4">
               <HiOutlineBadgeCheck className="scale-[1.4]" />
@@ -53,7 +53,7 @@ const Skills = () => {
           </ul>
         </div>
         <div
-          className="bg-[#2C2C6C] p-10 rounded-lg border border-[#2C2C6C] hover:bg-transparent duration-500"
+          className="bg-[#2C2C6C] md:p-10 p-3 rounded-lg border border-[#2C2C6C] hover:bg-transparent duration-500"
           data-aos="fade-left"
         >
           <h2 className="text-center text-xl font-semibold text-[#4BB0F8] ">

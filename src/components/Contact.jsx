@@ -4,12 +4,12 @@ const Card = ({ icon, title, subTitle, link }) => {
   return (
     <div className="bg-[#2C2C6C] border border-[#2C2C6C] py-5 flex flex-col justify-center items-center space-y-2 rounded-lg hover:bg-transparent duration-500">
       {icon}
-      <h2 className="text-lg font-semibold">Email</h2>
+      <h2 className="text-lg font-semibold">{title}</h2>
       <p className="text-white text-opacity-70 font-semibold text-sm">
-        mhdraizafarhan@gmail.com
+        {subTitle}
       </p>
       <a
-        href=""
+        href={link}
         target="_blank"
         rel="noopener noreferrer"
         className="text-[#4BB0F8] text-xs hover:text-[#b1deff] hover:scale-110 duration-300"
@@ -35,13 +35,13 @@ const Contact = () => {
       >
         <div className="space-y-5 md:w-1/2 lg:px-28">
           <Card
-            icon={<AiOutlineMail className="scale-[1.4]" />}
+            icon={<AiOutlineWhatsApp className="scale-[1.4]" />}
             title={"Whatsapp"}
             subTitle={"+62 822-6834-7830"}
             link={"https://wa.me/+6282268347830"}
           />
           <Card
-            icon={<AiOutlineWhatsApp className="scale-[1.4]" />}
+            icon={<AiOutlineMail className="scale-[1.4]" />}
             title={"Email"}
             subTitle={"mhdraizafarhan@gmail.com"}
             link={"mailto:mhdraizafarhan@gmail.com"}
