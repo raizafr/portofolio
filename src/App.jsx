@@ -15,9 +15,7 @@ function App() {
   return (
     <>
       <div className="px-3">
-        <Headroom>
-          <Navbar />
-        </Headroom>
+        <Navbar />
         <About />
         <Skills />
         <Portofolio />

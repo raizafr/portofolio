@@ -1,28 +1,35 @@
-import portofolio from "../assets/portofolio.webp";
-import todolist from "../assets/todolist.webp";
-import cloningTwitter from "../assets/twitterClone.webp";
-import slicing from "../assets/slicing.webp";
-import thirdSlicing from "../assets/slicing3.webp";
+import pictureAuazadigital from "../assets/picture-auazadigital.webp";
+import pictureFoodRecepi from "../assets/picture-foodrecipe.webp";
+import picturePortofolio from "../assets/picture-portofolio.webp";
+import pictureSlicing from "../assets/picture-slicing-design.webp";
+import pictureBacaQuran from "../assets/picture-website-baca-quran.webp";
 
-const Card = (props) => {
+const Card = ({ image, title, description, linkSourceCode, linkWebsite }) => {
   return (
-    <div className="w-[255px] h-[210px] bg-[#6B7280] hover:-translate-y-2 duration-300 hover:shadow-md hover:shadow-white">
-      <div className="flex justify-center">
-        <img src={props.image} alt="" className="w-[250px] mt-0.5" />
-      </div>
-      <div className="mt-1 px-1">
-        <div className=" font-bold ">
-          {props.title}
-          <span className="text-xs font-thin">{props.info}</span>
-        </div>
-        <div className="space-x-1 text-xs mt-2">
-          <a href={props.liveDemoLink} className="button" target="_blank">
-            {props.linkTitleDemo}
-          </a>
-          <a href={props.sourceCodeLink} className="button" target="blank">
-            {props.linkTitleCode}
-          </a>
-        </div>
+    <div
+      className="bg-[#2C2C6C] p-5 flex flex-col gap-2 hover:bg-transparent rounded-lg border border-[#2C2C6C] duration-300"
+      data-aos="fade-up"
+    >
+      <img src={image} alt={title} className="rounded-lg" />
+      <h2 className="text-xl font-semibold">{title}</h2>
+      <h3>{description}</h3>
+      <div className="flex gap-2 mt-6">
+        <a
+          href={linkSourceCode}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button-link"
+        >
+          Code
+        </a>
+        <a
+          href={linkWebsite}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button-link"
+        >
+          Visit
+        </a>
       </div>
     </div>
   );
@@ -30,60 +37,57 @@ const Card = (props) => {
 
 const Portofolio = () => {
   return (
-    <section>
+    <section id="portofolio">
       <div
-        className="text-5xl md:text-6xl lg:text-8xl font-bold lg:px-52 sm:px-20 py-10 text-gray-500"
+        className="text-5xl md:text-6xl lg:text-8xl font-bold lg:px-52 sm:px-20 py-10 text-white"
         data-aos="fade-up"
       >
         PORTOFOLIO
       </div>
-      <div className="container mx-auto lg:px-36 space-y-3 my-4 mb-5 md:px-10">
-        <div
-          className="grid lg:grid-cols-3 md:grid-cols-2 justify-items-center gap-7"
-          data-aos="fade-up"
-        >
-          <Card
-            image={slicing}
-            title="Slicing "
-            liveDemoLink="https://friendly-strudel-923ff0.netlify.app/"
-            sourceCodeLink="https://github.com/raizafr/slicing-design-2"
-            linkTitleDemo="Live Demo"
-            linkTitleCode="Surce Code"
-          />
-          <Card
-            image={thirdSlicing}
-            title="Slicing "
-            liveDemoLink="https://cosmic-sopapillas-bc7b4f.netlify.app/"
-            sourceCodeLink="https://github.com/raizafr/slicing-3"
-            linkTitleDemo="Live Demo"
-            linkTitleCode="Surce Code"
-          />
-          <Card
-            image={portofolio}
-            title="Website Portofolio"
-            liveDemoLink="http://raizafarhan.netlify.app/"
-            sourceCodeLink="https://github.com/raizafr/portofolio-master"
-            linkTitleDemo="Live Demo"
-            linkTitleCode="Surce Code"
-          />
-          <Card
-            image={todolist}
-            title="Todo List"
-            liveDemoLink="#"
-            sourceCodeLink="https://github.com/raizafr/todolist"
-            linkTitleDemo="Live Belum Tersedia"
-            linkTitleCode="Surce Code"
-          />
-          <Card
-            image={cloningTwitter}
-            title="Twitter Clone"
-            info=" dalam pengerjaan"
-            liveDemoLink="#"
-            sourceCodeLink="https://github.com/raizafr/twitter-clone"
-            linkTitleDemo="Live Belum Tersedia"
-            linkTitleCode="Surce Code"
-          />
-        </div>
+      <div className="container mx-auto px-3 md:px-6 lg:px-36 grid lg:grid-cols-3 gap-5 md:grid-cols-2 ">
+        <Card
+          image={picturePortofolio}
+          title={"Website Portofolio"}
+          description={"ReactJs || Tailwindcss || NodeJs || ExpressJs"}
+          linkSourceCode={"https://github.com/raizafr/portofolio"}
+          linkWebsite={"#"}
+        />
+        <Card
+          image={pictureAuazadigital}
+          title={"Auazadigital"}
+          description={
+            "ReactJs || Tailwindcss || NodeJs || ExpressJs || MySQL || Sequelize"
+          }
+          linkSourceCode={
+            "https://github.com/raizafr/web-user-interface-toko-product-digital"
+          }
+          linkWebsite={"https://auazadigital.com/"}
+        />
+        <Card
+          image={pictureFoodRecepi}
+          title={"Food Recipe"}
+          description={"ReactJs || Tailwindcss || DaisyUi"}
+          linkSourceCode={"https://github.com/raizafr/food-website"}
+          linkWebsite={"https://food-website-gold.vercel.app/"}
+        />
+        <Card
+          image={pictureSlicing}
+          title={"Slicing"}
+          description={"ReactJs || Tailwindcss"}
+          linkSourceCode={
+            "https://github.com/raizafr/slicing-landing-page-easyback"
+          }
+          linkWebsite={"https://landingpage-easybank-123.vercel.app/"}
+        />
+        <Card
+          image={pictureBacaQuran}
+          title={"Website Baca Qur'an"}
+          description={"ReactJs || Tailwindcss || Fake API"}
+          linkSourceCode={
+            "https://github.com/raizafr/website-baca-quran-with-public-api"
+          }
+          linkWebsite={"https://website-baca-quran-with-public-api.vercel.app/"}
+        />
       </div>
     </section>
   );

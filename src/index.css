@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 body{
-    @apply bg-porto text-white
+    @apply bg-[#1F1F38] text-white
 }
 
 .button{   
     @apply bg-[#244ba0] px-2 py-1 rounded-full hover:bg-[#2063f5] hover:text-black font-semibold 
+}
+
+.button-link{
+    @apply bg-[#4BB0F8] px-4 py-3 rounded-lg border border-[#4BB0F8] hover:bg-transparent font-semibold duration-300
 }
