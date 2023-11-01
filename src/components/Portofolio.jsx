@@ -3,6 +3,7 @@ import pictureFoodRecepi from "../assets/picture-foodrecipe.webp";
 import picturePortofolio from "../assets/picture-portofolio.webp";
 import pictureSlicing from "../assets/picture-slicing-design.webp";
 import pictureBacaQuran from "../assets/picture-website-baca-quran.webp";
+import pictureAnonymous from "../assets/picture-anonymous.png";
 
 const Card = ({ image, title, description, linkSourceCode, linkWebsite }) => {
   return (
@@ -87,6 +88,13 @@ const Portofolio = () => {
             "https://github.com/raizafr/website-baca-quran-with-public-api"
           }
           linkWebsite={"https://website-baca-quran-with-public-api.vercel.app/"}
+        />
+        <Card
+          image={pictureAnonymous}
+          title={"Bot Telegram Anonymous"}
+          description={"NodeJs || MySQL || ExpressJs || Telegraf"}
+          linkSourceCode={"https://github.com/raizafr/bot-telegram"}
+          linkWebsite={"https://t.me/cari_musuh_bot"}
         />
       </div>
     </section>
