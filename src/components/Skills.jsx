@@ -17,7 +17,7 @@ const Skills = () => {
           <h2 className="text-center text-xl font-semibold text-[#4BB0F8] ">
             Front End
           </h2>
-          <ul className={`grid grid-cols-2 gap-7 mt-10`}>
+          <ul className={`grid grid-cols-2 gap-7 mt-10 mb-5`}>
             <li className="flex font-semibold items-center gap-4">
               <HiOutlineBadgeCheck className="scale-[1.4]" />
               HTML
@@ -57,9 +57,9 @@ const Skills = () => {
           data-aos="fade-left"
         >
           <h2 className="text-center text-xl font-semibold text-[#4BB0F8] ">
-            Other
+            Back End
           </h2>
-          <ul className="grid grid-cols-2 gap-7 mt-10">
+          <ul className="grid grid-cols-2 gap-7 mt-10 mb-5">
             <li className="flex font-semibold items-center gap-4">
               <HiOutlineBadgeCheck className="scale-[1.4]" />
               NodeJs
@@ -70,15 +70,52 @@ const Skills = () => {
             </li>
             <li className="flex font-semibold items-center gap-4">
               <HiOutlineBadgeCheck className="scale-[1.4]" />
-              Canva
+              MySQL
             </li>
             <li className="flex font-semibold items-center gap-4">
               <HiOutlineBadgeCheck className="scale-[1.4]" />
-              Mysql
+              PostgreSQL
             </li>
             <li className="flex font-semibold items-center gap-4">
               <HiOutlineBadgeCheck className="scale-[1.4]" />
-              Git and github
+              MongoDB
+            </li>
+            <li className="flex font-semibold items-center gap-4">
+              <HiOutlineBadgeCheck className="scale-[1.4]" />
+              REST API
+            </li>
+            <li className="flex font-semibold items-center gap-4">
+              <HiOutlineBadgeCheck className="scale-[1.4]" />
+              JWT
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="container mx-auto px-3 md:px-6 lg:px-36 mt-10">
+        <div
+          className="bg-[#2C2C6C] md:p-10 p-3 rounded-lg border border-[#2C2C6C] hover:bg-transparent duration-500"
+          data-aos="fade-left"
+        >
+          <h2 className="text-center text-xl font-semibold text-[#4BB0F8] ">
+            Other
+          </h2>
+          <ul className="grid grid-cols-2 md:grid-cols-4 gap-7 mt-10 mb-5">
+            <li className="flex font-semibold items-center gap-4">
+              <HiOutlineBadgeCheck className="scale-[1.4]" />
+              Figma
+            </li>
+            <li className="flex font-semibold items-center gap-4">
+              <HiOutlineBadgeCheck className="scale-[1.4]" />
+              ExpressJs
+            </li>
+            <li className="flex font-semibold items-center gap-4">
+              <HiOutlineBadgeCheck className="scale-[1.4]" />
+              Postman
+            </li>
+
+            <li className="flex font-semibold items-center gap-4">
+              <HiOutlineBadgeCheck className="scale-[1.4]" />
+              Git & Github
             </li>
           </ul>
         </div>
