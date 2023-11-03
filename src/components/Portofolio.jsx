@@ -4,6 +4,7 @@ import picturePortofolio from "../assets/picture-portofolio.webp";
 import pictureSlicing from "../assets/picture-slicing-design.webp";
 import pictureBacaQuran from "../assets/picture-website-baca-quran.webp";
 import pictureAnonymous from "../assets/picture-anonymous.png";
+import restCountry from "../assets/picture-restcountry.png";
 
 const Card = ({ image, title, description, linkSourceCode, linkWebsite }) => {
   return (
@@ -95,6 +96,13 @@ const Portofolio = () => {
           description={"NodeJs || MySQL || ExpressJs || Telegraf"}
           linkSourceCode={"https://github.com/raizafr/bot-telegram"}
           linkWebsite={"https://t.me/cari_musuh_bot"}
+        />
+        <Card
+          image={restCountry}
+          title={"REST Country"}
+          description={"ReactJs || Tailwindcss"}
+          linkSourceCode={"https://github.com/raizafr/test-orderfaz-raiza"}
+          linkWebsite={"https://test-orderfaz-raiza.vercel.app/"}
         />
       </div>
     </section>
