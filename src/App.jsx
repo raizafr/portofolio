@@ -7,6 +7,9 @@ import Headroom from "react-headroom";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import Portofolio from "./components/Portofolio";
+import Aboutme from "./components/Aboutme";
+import Skill from "./components/Skill";
+import "animate.css";
 AOS.init({
   duration: 800,
 });
@@ -16,8 +19,8 @@ function App() {
     <>
       <div className="px-3">
         <Navbar />
-        <About />
-        <Skills />
+        <Aboutme />
+        <Skill />
         <Portofolio />
         <Contact />
       </div>

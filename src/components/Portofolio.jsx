@@ -5,6 +5,7 @@ import pictureSlicing from "../assets/picture-slicing-design.webp";
 import pictureBacaQuran from "../assets/picture-website-baca-quran.webp";
 import pictureAnonymous from "../assets/picture-anonymous.png";
 import restCountry from "../assets/picture-restcountry.png";
+import voomInvitation from "../assets/voom-invitation.png";
 
 const Card = ({ image, title, description, linkSourceCode, linkWebsite }) => {
   return (
@@ -64,6 +65,13 @@ const Portofolio = () => {
             "https://github.com/raizafr/web-user-interface-toko-product-digital"
           }
           linkWebsite={"https://auazadigital.com/"}
+        />
+        <Card
+          image={voomInvitation}
+          title={"Voom Invitation (freelance project)"}
+          description={"ReactJs || Tailwindcss"}
+          linkSourceCode={"https://github.com/raizafr/voow-digital-invitation"}
+          linkWebsite={"https://voow-digital-invitation.vercel.app/"}
         />
         <Card
           image={pictureFoodRecepi}
