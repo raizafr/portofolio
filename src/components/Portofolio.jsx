@@ -7,6 +7,7 @@ import pictureAnonymous from "../assets/picture-anonymous.webp";
 import restCountry from "../assets/picture-restcountry.webp";
 import voomInvitation from "../assets/voom-invitation.webp";
 import voowDigital from "../assets/voow-digital.webp";
+import linkOn from "../assets/linkon.webp";
 
 const Card = ({ image, title, description, linkSourceCode, linkWebsite }) => {
   return (
@@ -56,6 +57,13 @@ const Portofolio = () => {
           description={"NextJs"}
           linkSourceCode={"#"}
           linkWebsite={"https://voow.vercel.app/"}
+        />
+        <Card
+          image={linkOn}
+          title={"LinkOn"}
+          description={"NextJs || Typescript || Firebase"}
+          linkSourceCode={"#"}
+          linkWebsite={"https://linkon.cfd/"}
         />
         <Card
           image={picturePortofolio}
