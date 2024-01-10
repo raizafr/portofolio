@@ -6,6 +6,7 @@ import pictureBacaQuran from "../assets/picture-website-baca-quran.webp";
 import pictureAnonymous from "../assets/picture-anonymous.webp";
 import restCountry from "../assets/picture-restcountry.webp";
 import voomInvitation from "../assets/voom-invitation.webp";
+import voowDigital from "../assets/voow-digital.webp";
 
 const Card = ({ image, title, description, linkSourceCode, linkWebsite }) => {
   return (
@@ -47,6 +48,15 @@ const Portofolio = () => {
         PORTOFOLIO
       </div>
       <div className="container mx-auto px-3 md:px-6 lg:px-36 grid lg:grid-cols-3 gap-5 md:grid-cols-2 ">
+        <Card
+          image={voowDigital}
+          title={
+            "Voow Digital Invitation (project freelance, dalam pengerjaan)"
+          }
+          description={"NextJs"}
+          linkSourceCode={"#"}
+          linkWebsite={"https://voow.vercel.app/"}
+        />
         <Card
           image={picturePortofolio}
           title={"Website Portofolio"}
