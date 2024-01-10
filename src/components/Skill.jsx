@@ -3,18 +3,12 @@ import { HiOutlineBadgeCheck } from "react-icons/hi";
 export default function Skill() {
   return (
     <section id="portofolio">
-      <div
-        className="text-5xl md:text-6xl lg:text-8xl font-bold lg:px-52 sm:px-20 py-10 text-white"
-        data-aos="fade-up"
-      >
+      <div className="text-5xl md:text-6xl lg:text-8xl font-bold lg:px-52 sm:px-20 py-10 text-white">
         SKILLS
       </div>
       <div className="container mx-auto px-3 md:px-6 lg:px-36">
         <div className="grid md:grid-cols-2 gap-10">
-          <div
-            className="bg-[#2C2C6C] md:p-10 p-3 rounded-lg border border-[#2C2C6C] hover:bg-transparent duration-500"
-            data-aos="fade-right"
-          >
+          <div className="bg-[#2C2C6C] md:p-10 p-3 rounded-lg border border-[#2C2C6C] hover:bg-transparent duration-500">
             <h2 className="text-center text-xl font-semibold text-[#4BB0F8] ">
               Front End
             </h2>
@@ -101,10 +95,7 @@ export default function Skill() {
           </div>
         </div>
         <div className="mt-10">
-          <div
-            className="bg-[#2C2C6C] md:p-10 p-3 rounded-lg border border-[#2C2C6C] hover:bg-transparent duration-500"
-            data-aos="fade-right"
-          >
+          <div className="bg-[#2C2C6C] md:p-10 p-3 rounded-lg border border-[#2C2C6C] hover:bg-transparent duration-500">
             <h2 className="text-center text-xl font-semibold text-[#4BB0F8] ">
               Other
             </h2>

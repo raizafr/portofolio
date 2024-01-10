@@ -3,17 +3,19 @@ import pictureFoodRecepi from "../assets/picture-foodrecipe.webp";
 import picturePortofolio from "../assets/picture-portofolio.webp";
 import pictureSlicing from "../assets/picture-slicing-design.webp";
 import pictureBacaQuran from "../assets/picture-website-baca-quran.webp";
-import pictureAnonymous from "../assets/picture-anonymous.png";
-import restCountry from "../assets/picture-restcountry.png";
-import voomInvitation from "../assets/voom-invitation.png";
+import pictureAnonymous from "../assets/picture-anonymous.webp";
+import restCountry from "../assets/picture-restcountry.webp";
+import voomInvitation from "../assets/voom-invitation.webp";
 
 const Card = ({ image, title, description, linkSourceCode, linkWebsite }) => {
   return (
-    <div
-      className="bg-[#2C2C6C] p-5 flex flex-col gap-2 hover:bg-transparent rounded-lg border border-[#2C2C6C] duration-300"
-      data-aos="fade-up"
-    >
-      <img src={image} alt={title} className="rounded-lg" />
+    <div className="bg-[#2C2C6C] p-5 flex flex-col gap-2 hover:bg-transparent rounded-lg border border-[#2C2C6C] duration-300">
+      <img
+        src={image}
+        alt={title}
+        className="rounded-lg w-full"
+        loading="lazy"
+      />
       <h2 className="text-xl font-semibold">{title}</h2>
       <h3>{description}</h3>
       <div className="flex gap-2 mt-6">
@@ -41,10 +43,7 @@ const Card = ({ image, title, description, linkSourceCode, linkWebsite }) => {
 const Portofolio = () => {
   return (
     <section id="portofolio">
-      <div
-        className="text-5xl md:text-6xl lg:text-8xl font-bold lg:px-52 sm:px-20 py-10 text-white"
-        data-aos="fade-up"
-      >
+      <div className="text-5xl md:text-6xl lg:text-8xl font-bold lg:px-52 sm:px-20 py-10 text-white">
         PORTOFOLIO
       </div>
       <div className="container mx-auto px-3 md:px-6 lg:px-36 grid lg:grid-cols-3 gap-5 md:grid-cols-2 ">
